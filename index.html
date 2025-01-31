@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <!-- styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:wght@200&family=Urbanist:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parentContainer">
+      <!-- container 1 -->
+      <!-- brand -->
+      <div class="container1">
+        <div id="head">
+          <h1>Music</h1>
+        </div>
+        <!-- available songs -->
+        <div id="availSong"><h2>Available Songs</h2></div>
+        <div id="songs">
+          <div class="btn-h2cont">
+            <h2 id="0">sunflower</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(0)">
+              Q
+            </button>
+          </div>
+          <div class="btn-h2cont">
+            <h2 id="1">blindingLights</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(1)">
+              Q
+            </button>
+          </div>
+          <div class="btn-h2cont">
+            <h2 id="2">industryBaby</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(2)">
+              Q
+            </button>
+          </div>
+          <div class="btn-h2cont">
+            <h2 id="3">OneKiss</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(3)">
+              Q
+            </button>
+          </div>
+          <div class="btn-h2cont">
+            <h2 id="4">LoveMeLikeYouDo</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(4)">
+              Q
+            </button>
+          </div>
+          <div class="btn-h2cont">
+            <h2 id="5">Dandelions</h2>
+            <button type="button" class="Qsubmit" onclick="queueLister(5)">
+              Q
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="search-queueContainer">
+          <div class="search-nextCont">
+            <!-- search -->
+            <div class="search">
+              <input type="text" placeholder="What do want to listen?" id="search" />
+              <button type="button" onclick="search()" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- Next -->
+            <div class="next">
+              <h1 class="text">Next song</h1>
+              <span id="nextSong">blindingLights</span>
+            </div>
+          </div>
+          <!-- queue -->
+          <div id="queue">
+            <h2>Songs in Queue</h2>
+            <ul id="Qhead"></ul>
+          </div>
+        </div>
+        <!-- nowPlaying -->
+        <div id="nowPlaying">
+          <h2 class="text">Now playing </h2>
+          <span id="songName">sunflower</span>
+        </div>
+        <!-- console -->
+        <div id="console">
+        <div id="prev">
+          <i class="fa-regular fa-circle-left"></i>
+        </div>
+        <div id="play">
+          <i id= "Icon"class="fa-regular fa-circle-play" onclick="iconChange()" aria-hidden="true"></i>
+        </div>
+        <div id="next">
+          <i class="fa-regular fa-circle-right"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9bfcec609d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
