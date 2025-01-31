@@ -1,0 +1,191 @@
+body{
+    margin: 1% ;
+    background-color: #212121;
+}
+#head{
+   padding: 3% 6% ;
+    background-color: #2C3333;
+    border-radius: 1rem;
+}
+h1{
+    font-family: 'Urbanist', sans-serif;
+    margin: 0;
+}
+h2{
+    font-family: 'Exo', sans-serif;
+    color: #F0EBE3;
+    margin: 0;
+}
+div{
+background-color: #2C3333;
+}
+.btn-h2cont{
+    display: flex;
+    justify-content: space-between;
+}
+.container1{
+    width: 25%;
+    background-color: #212121;
+    border-radius: 1rem ;
+}
+.container2{
+    width: 74%;
+    border-radius: 1rem;
+}
+.parentContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.btn-h2cont{
+    display: flex;
+    padding: 3% 4% 3% 4%;
+    cursor: pointer;
+}
+.search-nextCont{
+    width: 50%;
+    border-right:  1px #6667AB;
+    border-top-left-radius: 1rem;
+    border-bottom: 0.3rem #212121 solid;
+}
+h1{
+    color: #F0EBE3;
+}
+#queue{
+    width: 50%;
+    border-top-right-radius: 1rem;
+    padding: 1% 3% 3% 3%;
+    border-left: 0.3rem #212121 solid;
+    border-bottom: 0.3rem #212121 solid;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#songs{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 45vh;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.search{
+    border-top-left-radius: 1rem;
+    padding: 2% 3% 2% 3%;
+    border-bottom: 0.3rem #212121 solid;
+}
+#search{
+    width: 87%;
+    height: 2rem;
+    border-radius: 1rem;
+    font-family: 'Exo', sans-serif;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+.btn-search{
+    height: 2rem;
+    width:2rem;
+    border-radius: 0.5rem;
+}
+.search-queueContainer{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* height: 40%; */
+}
+.next{
+    padding: 2% 3% 2% 3%;
+
+}
+.text{
+    font-size: 2.5rem;
+}
+#availSong{
+    padding:3% 6% ;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-top: 0.8rem;
+    border-bottom: 0.3rem #212121 solid;
+}
+#nextSong{
+    font-family: 'Exo', sans-serif;
+    font-size: 1.75rem;
+    color: #F0EBE3;
+}
+#songs::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  #songs::-webkit-scrollbar {
+    width: 20px;
+  }
+#songs::-webkit-scrollbar-thumb {
+    background-color: #212121;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+ul{
+    list-style-type: none;
+    padding: 1% 0 1% 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.25rem;
+}
+#Qhead{
+    margin: 0;
+}
+li{
+    color: #F0EBE3;
+}
+#nowPlaying{
+    padding: 1% 1.5%;
+    border-bottom: 0.3rem #212121 solid;
+    color: #F0EBE3;
+}
+#songName{
+    font-size: 2rem;
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+}
+#play,
+#next,
+#prev {
+    padding: 4% 1.5%;
+}
+#console{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius:1rem ;
+}
+.fa-regular{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #F0EBE3;
+}
+.Qsubmit{
+    border-radius: 0.5rem;
+    font: 1.25rem 'Urbanist', sans-serif;
+}
+.Qsubmit:hover{
+    background-color: #F0EBE3;
+    cursor: pointer;
+}
+.btn-h2cont:hover{
+    background-color: #474e4ea5;
+}
+@media screen and (max-width:900px) {
+    .parentContainer{
+        flex-direction: column;
+    }
+    .container1{
+        order:1;
+        width: auto;
+        margin-bottom: 0.8rem;
+    }
+    .container2{
+        order:2;
+        width:auto;
+    }
+}
